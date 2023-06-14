@@ -1,0 +1,292 @@
+:root{
+  --grass: rgb(0, 250, 63);
+  --normal:rgb(255, 107, 230);
+  --fighting:rgba(239, 69, 39, 0.836);
+  --poison: rgb(213, 170, 248);
+  --fliying: rgb(142, 155, 214);
+  --ground:rgb(218, 207, 185);
+  --rock: rgb(187, 160, 134);
+  --bug: rgb(145, 202, 94);
+  --ghost:rgb(59, 52, 71);
+  --steel: rgb(155, 113, 156);
+  --fire:rgb(233, 33, 33);
+  --water: rgb(67, 124, 198);
+  --electric:rgb(241, 215, 69);
+  --psychic: rgb(187, 71, 181);
+  --ice:rgb(211, 227, 245);
+  --dragon:rgb(129, 130, 177);
+  --dark:rgb(121, 96, 159);
+  --fairy: rgb(250, 219, 247);
+  --unknown:rgb(147, 192, 137);
+  --shadow: rgb(117, 89, 114);
+}
+
+  .ButtonsContainer button{
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  .ButtonsContainer button:nth-child(1){
+   padding: 10px 5px;
+   background-color: rgba(5, 231, 5, 0%);
+   border: 2px solid rgb(205, 198, 198)
+  }
+  .ButtonsContainer button:nth-child(1):hover{
+    background-color: rgba(5, 231, 5, 100%);
+    transition: .5s;
+    border: 2px solid rgba(5, 231, 5, 100%)
+  }
+
+
+  .ButtonsContainer button:nth-child(2){
+  background-color: var(--normal);
+  background-color: rgba(5, 231, 5, 0%);
+  border: 2px solid rgb(205, 198, 198)
+  }
+  .ButtonsContainer button:nth-child(2):hover{
+    background-color: var(--normal);
+    transition: .5s;
+    border: 2px solid var(--normal)
+  }
+
+
+  .ButtonsContainer button:nth-child(3){
+  background-color: var(--fighting);
+  background-color: rgba(5, 231, 5, 0%);
+  border: 2px solid rgb(205, 198, 198)
+  }
+  .ButtonsContainer button:nth-child(3):hover{
+    background-color: var(--fighting);
+    transition: .5s;
+    border: 2px solid var(--fighting)
+  }
+
+
+  .ButtonsContainer button:nth-child(4){
+  background-color: rgba(5, 231, 5, 0%);
+  border: 2px solid rgb(205, 198, 198)
+  }
+  .ButtonsContainer button:nth-child(4):hover{
+    background-color: var(--poison);
+    transition: .5s;
+    border: 2px solid var(--poison)
+  }
+
+
+  .ButtonsContainer button:nth-child(5){
+    background-color: var(--fliying);
+    background-color: rgba(5, 231, 5, 0%);
+  border: 2px solid rgb(205, 198, 198)
+  }
+  .ButtonsContainer button:nth-child(5):hover{
+    background-color: var(--fliying);
+    transition: .5s;
+    border: 2px solid var(--fliying)
+  }
+
+
+  .ButtonsContainer button:nth-child(6){
+    background-color:  var(--ground);
+    background-color: rgba(5, 231, 5, 0%);
+  border: 2px solid rgb(205, 198, 198)
+  }
+  .ButtonsContainer button:nth-child(6):hover{
+    background-color:  var(--ground);
+    transition: .5s;
+    border: 2px solid var(--ground)
+  }
+
+
+  .ButtonsContainer button:nth-child(7){
+    background-color: var(--rock);
+    background-color: rgba(5, 231, 5, 0%);
+  border: 2px solid rgb(205, 198, 198)
+  }
+  .ButtonsContainer button:nth-child(7):hover{
+    background-color: var(--rock);
+    transition: .5s;
+    border: 2px solid var(--rock)
+  }
+
+
+  .ButtonsContainer button:nth-child(8){
+    background-color: var(--bug);
+    background-color: rgba(5, 231, 5, 0%);
+  border: 2px solid rgb(205, 198, 198)
+  }
+  .ButtonsContainer button:nth-child(8):hover{
+    background-color: var(--bug);
+    transition: .5s;
+    border: 2px solid var(--bug)
+  }
+
+
+  .ButtonsContainer button:nth-child(9){
+    background-color: var(--ghost);
+    background-color: rgba(5, 231, 5, 0%);
+  border: 2px solid rgb(205, 198, 198)
+  }
+  .ButtonsContainer button:nth-child(9):hover{
+    background-color: var(--ghost);
+    transition: .5s;
+    border: 2px solid var(--ghost)
+  }
+
+
+  .ButtonsContainer button:nth-child(10){
+  background-color: var(--steel) ;
+  background-color: rgba(5, 231, 5, 0%);
+  border: 2px solid rgb(205, 198, 198)
+  }
+  .ButtonsContainer button:nth-child(10):hover{
+    background-color: var(--steel) ;
+    transition: .5s;
+    border: 2px solid var(--steel)
+  }
+
+
+  .ButtonsContainer button:nth-child(11){
+  background-color: var(--fire);
+  background-color: rgba(5, 231, 5, 0%);
+  border: 2px solid rgb(205, 198, 198)
+  }
+  .ButtonsContainer button:nth-child(11):hover{
+    background-color: var(--fire);
+    transition: .5s;
+    border: 2px solid var(--fire)
+  }
+
+
+  .ButtonsContainer button:nth-child(12){
+  background-color: var(--water);
+  background-color: rgba(5, 231, 5, 0%);
+  border: 2px solid rgb(205, 198, 198)
+  }
+  .ButtonsContainer button:nth-child(12):hover{
+    background-color: var(--water);
+    transition: .5s;
+    border: 2px solid var(--water)
+  }
+
+
+  .ButtonsContainer button:nth-child(13){
+    background-color: var(--electric);
+    background-color: rgba(5, 231, 5, 0%);
+    border: 2px solid rgb(205, 198, 198)
+  }
+  .ButtonsContainer button:nth-child(13):hover{
+    background-color: var(--electric);  
+    transition: .5s;
+    border: 2px solid var(--electric)
+  }
+
+
+  .ButtonsContainer button:nth-child(14){
+    background-color: var(--psychic);
+    background-color: rgba(5, 231, 5, 0%);
+  border: 2px solid rgb(205, 198, 198)
+  }
+  .ButtonsContainer button:nth-child(14):hover{
+    background-color: var(--psychic);
+    transition: .5s;
+    border: 2px solid var(--psychic)
+  }
+
+
+  .ButtonsContainer button:nth-child(15){
+    background-color: var(--ice);
+    background-color: rgba(5, 231, 5, 0%);
+  border: 2px solid rgb(205, 198, 198)
+  }
+  .ButtonsContainer button:nth-child(15):hover{
+    background-color: var(--ice); 
+    transition: .5s;
+    border: 2px solid var(--ice)
+  }
+
+
+  .ButtonsContainer button:nth-child(16){
+    background-color: var(--dragon);
+    background-color: rgba(5, 231, 5, 0%);
+    border: 2px solid rgb(205, 198, 198)
+  }
+  .ButtonsContainer button:nth-child(16):hover{
+    background-color: var(--dragon);  
+    transition: .5s;
+    border: 2px solid var(--dragon)
+  }
+
+
+  .ButtonsContainer button:nth-child(17){
+    background-color: var(--dark);
+    background-color: rgba(5, 231, 5, 0%);
+  border: 2px solid rgb(205, 198, 198)
+  }
+  .ButtonsContainer button:nth-child(17):hover{
+    background-color: var(--dark) ;
+    transition: .5s;
+    border: 2px solid var(--dark)
+  }
+
+
+  .ButtonsContainer button:nth-child(18){
+    background-color: var(--fairy);
+    background-color: rgba(5, 231, 5, 0%);
+  border: 2px solid rgb(205, 198, 198)
+  }
+  .ButtonsContainer button:nth-child(18):hover{
+    background-color: var(--fairy);
+    transition: .5s;
+    border: 2px solid var(--fair
+    )
+  }
+
+
+  .ButtonsContainer button:nth-child(19){
+    background-color: var(--shadow) ;
+    background-color: rgba(5, 231, 5, 0%);
+    border: 2px solid rgb(205, 198, 198)
+  }
+  .ButtonsContainer button:nth-child(19):hover{
+    background-color: var(--shadow) ;
+    transition: .5s;
+    border: 2px solid var(--shadow)
+  }
+
+
+  .ButtonsContainer button:nth-child(20){
+    background-color: var(--unknown);
+    background-color: rgba(5, 231, 5, 0%);
+    border: 2px solid rgb(205, 198, 198)
+  }
+  .ButtonsContainer button:nth-child(20):hover{
+    background-color: var(--unknown);
+    transition: .5s;
+    border: 2px solid var(--unknown)
+  }
+
+
+  .ButtonsContainer{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 14%;
+    float: right;
+  }
+  .ButtonsContainer button{
+    margin:1rem;
+    padding: .7rem 1rem;
+    border-radius: 10%;
+    color: white;
+    border: none;
+    box-shadow: 4px 4px 20px black;
+    font-size: 1.5rem;
+    font-size: 20px;
+  
+  }
+  /* .ButtonsContainer button:hover{
+    /* transform: scale(1.5);
+    transition: .3s; */ 
+
+.ButtonsContainer button:active{
+    transform: scale(.7);
+    transition: .1s;
+}

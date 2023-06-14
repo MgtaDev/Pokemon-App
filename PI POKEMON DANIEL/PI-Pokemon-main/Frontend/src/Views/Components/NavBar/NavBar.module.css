@@ -1,0 +1,41 @@
+.Navbar{
+background-color: rgba(73, 2, 109, 0.8);
+opacity: 60%;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.Navbar a{
+    margin-right: 6rem;
+    position: relative;
+    left: 48%;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    letter-spacing: 2px;
+    text-shadow: 4px 4px 20px rgb(218, 213, 213);
+    border-radius: 1rem;
+}
+.Navbar button{
+    border-radius: 15px;
+    border: none;
+    padding: 0.8rem;
+}
+.Navbar img{
+    width: 90px;
+    margin-top:  .8rem;
+    margin-left: 4rem;
+}
+.NavButtons{
+    margin-top: -6rem;
+    padding:2rem;
+}
+.NavButtons a:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+.NavButtons a:active{
+    transform: scale(.7);
+    transition: .1s;
+}
+

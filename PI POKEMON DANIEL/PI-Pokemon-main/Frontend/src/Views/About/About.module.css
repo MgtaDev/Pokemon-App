@@ -1,0 +1,39 @@
+.aboutMe{
+    /* box-sizing: border-box; */
+    margin-top: -.5rem;
+    margin-bottom: -.5rem;
+    background-size: 100vh;
+    padding-top: 20rem;
+    background:linear-gradient(
+    50deg,
+       rgb(90, 42, 161) 5%,
+        rgba(156, 132, 132,85%)50%,
+        rgba(89, 114, 120, 0.75) 00%
+
+         );
+         color: white;
+}
+.aboutMe h1{
+    display: flex;
+    justify-content: center;
+    margin-top:1rem;
+}
+.aboutMe span{
+    color: #987fecd7;
+    margin-left: 1rem;
+}
+.aboutMe h2{
+font-size: 40px;
+display: flex;
+justify-content: center;
+}
+.aboutMe img{
+width: 200px
+}
+.aboutMe p{
+padding-bottom: 10rem;
+line-height: rem;
+display: flex;
+justify-content: center;
+margin-bottom: -4rem;
+}

@@ -1,0 +1,9 @@
+.Home img{
+    width: 400px;
+    display: flex;;
+    position: relative;
+    left: 30%;
+}
+.Home{
+    margin: 5rem;
+}
