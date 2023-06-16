@@ -1,7 +1,7 @@
 const { Pokemon, Type } = require('../db.js');
 
 //Creamos un nuevo pokemon en nuestra app
-const postPokemon = async (req,res) => {
+const postPokemons = async (req,res) => {
 try {
   //Nos traemos los datos que requerira el pokemon por body
   const { name, image, hp, attack, defense, speed, height, weight } = req.body;
@@ -32,4 +32,4 @@ return res.status(200).json(newPokemon)
 }
 }
 
-module.exports = postPokemon;
+module.exports = postPokemons;

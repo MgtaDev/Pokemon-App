@@ -1,11 +1,12 @@
 import axios from "axios"
-import {ADD_POKEMONS, GET_POKEMON_BY_ID, SET_ORDER_A_Z, SET_ORDER_Z_A, FILTER_BY_ATTACK, SHOW_API_POKEMONS, SHOW_DB_POKEMONS } from '../Redux/Types'
+import {ADD_POKEMONS, SET_ORDER_A_Z, SET_ORDER_Z_A, FILTER_BY_ATTACK, SHOW_API_POKEMONS, SHOW_DB_POKEMONS } from '../Redux/Types'
 
 export const addPokemons = ()=> {
-    const myUrl = 'https://localhost:3001/pokemons'
+    const myUrl = 'http://localhost:3001/pokemons'
     return async (dispatch)=> {
     try {
         const { data } = await axios.get(myUrl)
+        if(!data) return ('No hay pokemones en estos momentos')
         return dispatch({
             type: ADD_POKEMONS,
             payload: data
@@ -13,29 +14,10 @@ export const addPokemons = ()=> {
 
 
     } catch (error) {
-       console.log(error.message)
+       console.log('Error inesperado')
     }
     }
     }
-
-export const getPokemonsById = () => {
-    const myUrl = 'https://localhost:3001/pokemons/:id'
-    return async (dispatch) => {
-        try {
-        const { data } = await axios.get(myUrl)
-        if(!data) return ('No se ha encontrado al pokemon')
-        return dispatch({
-            type:GET_POKEMON_BY_ID,
-            payload:data
-        })
-
-            
-        } catch (error) {
-            console.log(error.message)
-        }
-    
-   }
-}
 
   export const orderA_Z=()=>({
     type:SET_ORDER_A_Z,

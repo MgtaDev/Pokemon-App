@@ -1,23 +1,51 @@
+import { useParams } from 'react-router-dom';
 import style from './Detail.module.css'
-import Pokemon from '../assets/pokemonGift.gif'
+import { useEffect, useState } from 'react';
+import axios from 'axios'
 
 const Detail = () => {
+  const { id } = useParams();
+  const [pokemon, setPokemon] = useState({});
+  console.log(id)
+
+
+  useEffect(() => {
+      axios(`http://localhost:3001/pokemons/${id}`)
+     .then((response) => response.data)
+     .then((data) => {
+       if (data.id) {
+         setPokemon(data);
+       } else {
+         window.alert("No existe ese pokemon.");
+       }
+     })
+     .catch((err) => {
+       window.alert("No hay pokemon con ese nombre.");
+     });
+ }, [id]);
+
+
+
     return(
         <div className={style.Detail}>
           <div className={style.Card}>
        
             <div className={style.Img}>
-            <img src={Pokemon} alt="" />  
+            <img src={pokemon.image} alt="" />  
             </div>
 
             <div className={style.Content}>
-            <h1>Stats</h1>
-            <h4>Hp:100❤️‍🔥</h4>
-            <h4>Attack:100⚔️</h4>
-            <h4>Defense:80🛡️ </h4>
-            <h4>Speed:50⚡</h4>
-            <h4>Height:180🧬</h4>
-            <h4>Weight:70🩻 </h4>
+            
+            {/* conditional chaining */}
+            <h1>{pokemon?.name}</h1>
+            <h4>Hp:{pokemon?.hp}❤️‍🔥</h4> 
+            <h4>Attack:{pokemon?.attack}⚔️</h4> 
+            <h4>Defense:{pokemon?.defense}🛡️ </h4> 
+            <h4>Speed:{pokemon?.speed}⚡</h4>
+            <h4>Height:{pokemon?.height}M🧬</h4>
+            <h4>Weight:{pokemon?.weight}Kg🩻 </h4>
+              
+          
             </div>
 
           </div>

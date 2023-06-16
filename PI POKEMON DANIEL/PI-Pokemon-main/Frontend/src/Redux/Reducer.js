@@ -1,5 +1,5 @@
 // Importamos nuestros types para usarlos en el reducer
-import { ADD_POKEMONS, GET_POKEMON_BY_ID, SET_ORDER_A_Z, SET_ORDER_Z_A, FILTER_BY_ATTACK, SHOW_API_POKEMONS, SHOW_DB_POKEMONS, } from './Types'
+import { ADD_POKEMONS, SET_ORDER_A_Z, SET_ORDER_Z_A, FILTER_BY_ATTACK, SET_LOADING } from './Types'
 
 //Estado inicial de nuestro reducer
 const initialstate = {
@@ -7,7 +7,7 @@ const initialstate = {
     loading: false,
     types:[]
   }
-  
+
 // Creamos a nuestro reducer
 const Reducer = (state = initialstate, action) => {
 switch (action.type) {
@@ -33,6 +33,12 @@ switch (action.type) {
             ...state,
             pokemons: state.pokemons.slice().sort((a, b) => b.attack - a.attack)
         }
+    
+    case SET_LOADING:
+
+            return {
+                 ...state, loading: action.payload }
+                 ;
     
     default:
         return{

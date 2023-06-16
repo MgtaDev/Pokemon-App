@@ -7,3 +7,6 @@
  export const FILTER_BY_ATTACK = 'FILTER_BY_ATTACK'
  export const SHOW_API_POKEMONS = 'SHOW_API_POKEMONS'
  export const SHOW_DB_POKEMONS = 'SHOW_DB_POKEMONS'
+ export const SET_LOADING = 'SET_LOADING'
+ 
+ 

@@ -2,21 +2,20 @@
     justify-content: center;
     display: flex;
     margin-top: 1rem;
-
 }
 .SearchBar button{
-    margin:1rem;
+    margin:1.1rem;
     padding: .7rem 2rem;
     border-radius: 10%;
     color: white;
     border: 2px solid white;
     box-shadow: 4px 4px 20px black;
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     background-color: rgba(0, 0, 0, 0.1);
-
-  
+    width: 10%;
 }
+
 .SearchBar button:hover{
     /* transform: scale(1.1);
     transition: .3s; */
@@ -37,6 +36,6 @@
     box-shadow: 4px 4px 20px black;
     font-size: 1.5rem;
     border: 3px solid rgb(232, 236, 241);
-    left: -1%;
     font-size: 20px;
+    margin-right: -1rem;
 }

@@ -1,0 +1,45 @@
+.Card{
+background-color: white;
+border-top: 2px solid black;
+padding: 15px 15px;
+border-radius: .5rem;
+gap: 1rem;
+margin-bottom: 3rem;
+background-image: url('../assets/pokemonfrontcard.jpeg');
+background-repeat: no-repeat;
+background-size:  cover;
+background-position: 50%;
+box-shadow: 4px 4px 30px rgb(59, 58, 58);
+color: white;
+}
+
+
+.Card img{
+    width: 180px;
+    position: relative;
+    left: 2%;
+    margin-top: -12rem;
+
+}
+.Card h1{
+font-size: 20px;
+position: relative;
+left: 10%;
+text-transform: uppercase;
+
+}
+.Card p {
+font-size: 10px;
+}
+.Card button{
+width: 80%;
+font-size: 15px;
+position: relative;
+left: 10%;
+color: white;
+margin-top: 2rem;
+/* margin-bottom: .9rem; */
+}
+.Card a{
+    text-decoration: none;
+}

@@ -2,8 +2,9 @@
     width: 400px;
     display: flex;;
     position: relative;
-    left: 30%;
+    left: 31%;
+    padding-top: 10rem;
 }
-.Home{
+/* .Home{
     margin: 5rem;
-}
+} */

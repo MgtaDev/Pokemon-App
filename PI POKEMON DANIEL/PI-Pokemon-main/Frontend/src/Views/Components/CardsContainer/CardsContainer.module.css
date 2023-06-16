@@ -1,3 +1,31 @@
+.CardsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1.8rem;
+    margin-left: 10rem;
+    position: relative;
+    left: -5%;
+
+}
+
 .pageButtons button{
-    padding: 20px 15px;
+    padding: 10px 20px;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: rgba(56, 48, 48, 0.531);
+    margin: 1rem;
+    /* border:1px solid white; */
+    position: relative;
+    top: 90%;
+    left: -23.5rem;
+    cursor: pointer;
+}
+.pageButtons button:first-of-type{
+    position: relative;
+}
+.pageButtons button:last-of-type{
+    position: relative;
 }

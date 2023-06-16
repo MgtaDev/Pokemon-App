@@ -3,23 +3,26 @@
     margin-top: -.5rem;
     margin-bottom: -.5rem;
     background-size: 100vh;
-    padding-top: 20rem;
+    padding-top: 10rem;
     background:linear-gradient(
     50deg,
-       rgb(90, 42, 161) 5%,
-        rgba(156, 132, 132,85%)50%,
+       rgb(37, 23, 158) 5%,
+        rgba(132, 140, 156, 0.85)50%,
         rgba(89, 114, 120, 0.75) 00%
 
          );
-         color: white;
+     color: white;
 }
-.aboutMe h1{
-    display: flex;
-    justify-content: center;
-    margin-top:1rem;
-}
+
 .aboutMe span{
-    color: #987fecd7;
+    color: #4d5a7ed7;
+    margin-left: .5rem;
+}
+.aboutMe span:last-of-type{
+    position: relative;
+    right: 5.3%;
+    font-size: 37px;
+    color: white;
     margin-left: 1rem;
 }
 .aboutMe h2{
@@ -27,13 +30,23 @@ font-size: 40px;
 display: flex;
 justify-content: center;
 }
+.aboutMe h2:first-of-type{
+    position: relative;
+    left: 1%;
+    
+}
 .aboutMe img{
-width: 200px
+width: 350px;
+border-radius: .5rem;
+position: relative;
+left: 36%;
 }
 .aboutMe p{
-padding-bottom: 10rem;
+padding-bottom: 15rem;
 line-height: rem;
 display: flex;
 justify-content: center;
-margin-bottom: -4rem;
+margin-bottom: -2rem;
+padding: 1rem 10rem;
+padding-bottom: 10rem;
 }

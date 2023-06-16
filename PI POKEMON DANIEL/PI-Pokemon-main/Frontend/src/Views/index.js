@@ -3,7 +3,8 @@ import Home from "./Home/Home";
 import Detail from "./Detail/Detail";
 import CreateForm from "./CreateForm/CreateForm";
 import About from "./About/About";
+import Loading from "./Loading/Loading";
 
 export{
-    Landing, Home, Detail, CreateForm, About
+    Landing, Home, Detail, CreateForm, About, Loading
 }

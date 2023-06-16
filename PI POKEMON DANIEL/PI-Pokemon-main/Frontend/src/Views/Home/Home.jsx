@@ -1,6 +1,6 @@
 import style from './Home.module.css'
 import SearchBar from '../Components/SearchBar/SearchBar.jsx'
-import Pokemon from '../assets/Pokemon.png'
+import PokemonLogo from '../assets/PokemonLogo.png'
 import ButtonsContainer from '../Components/ButtonsContainer/ButtonsContainer.jsx'
 import CardsContainer from '../Components/CardsContainer/CardsContainer'
 import { useEffect } from 'react'
@@ -23,7 +23,7 @@ const Home = () => {
 
     return(
         <div className={style.Home}>
-            <img src={Pokemon} alt="img" />
+            <img src={PokemonLogo} alt="img" />
             <SearchBar onSearch={onSearch}/>
             <ButtonsContainer/>
             <CardsContainer/>

@@ -21,9 +21,9 @@ function App() {
 
     <Route  path="/home" element={<Home/>} />
 
-    <Route  path="/form" element={<CreateForm submit={onsubmit} />} />
+    <Route  path="/form" element={<CreateForm onsubmit={onsubmit} />} />
 
-    <Route  path="/detail:id" element={<Detail/>} />
+    <Route  path="/details/:id" element={<Detail/>} />
 
     <Route  path="/about" element={<About/>} />
 

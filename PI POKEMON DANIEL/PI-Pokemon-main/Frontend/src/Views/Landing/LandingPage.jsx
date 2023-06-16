@@ -7,9 +7,7 @@ const Landing = () => {
         <div className={style.Landing}>
             <img src={Pokemon} alt="img" />
 
-            <div className={style.content}>
-           
-        
+
             <NavLink to='/home'>
             <span></span>
             <span></span>
@@ -18,7 +16,6 @@ const Landing = () => {
                Entrar
            </NavLink>
          
-            </div>
         </div>
     )
 }

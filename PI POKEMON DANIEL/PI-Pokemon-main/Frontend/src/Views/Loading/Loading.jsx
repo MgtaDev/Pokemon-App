@@ -1,7 +1,12 @@
 import React from 'react'
+import loadingGif from '../assets/gengarLoadingGif.gif'
+import style from './Loading.module.css'
 
-export default function Loading() {
+const Loading = ()=>  {
   return (
-    <div>Loading...</div>
+    <div className={style.loadingCard}>
+      <img src={loadingGif} alt="" />
+    </div>
   )
 }
+export default Loading
