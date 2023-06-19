@@ -5,10 +5,18 @@ export default function About(){
     return(
         <div className={style.aboutMe}>
             <img src={myPhoto} alt="" />
-            <h2>About <span>Me </span><span>Me </span></h2>
+            <h1>About <span>Me </span><span>Me </span></h1>
             <h2>Full Stack Developer</h2>
             <img src="" alt="" />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, libero reprehenderit natus adipisci perspiciatis, distinctio odio, voluptates vitae quia doloribus eveniet tempora? Id, expedita aspernatur fugit voluptates pariatur perferendis repudiandae!</p>
+            <p>Hola 👋, soy Daniel Passantino ✔️ Soy un programador Full Stack jr! Me especializo en Frontend y Responsive Web Design
+
+📚 Actualmente estoy estudiando Ingles, Frances, React Native y Next.js
+
+👨‍💻 Todos mis proyectos estan disponibles en mi portafolio personal:
+
+💬 Puedes consultarme acerca de React, Express, Node, PostgreSQL, MongDB, HTML, CSS y Javascript,
+
+📫 Contactame via Email a passantinodev@gmail.com</p>
             
         </div>
     );

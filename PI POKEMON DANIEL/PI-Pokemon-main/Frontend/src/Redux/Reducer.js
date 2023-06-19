@@ -1,5 +1,5 @@
 // Importamos nuestros types para usarlos en el reducer
-import { ADD_POKEMONS, SET_ORDER_A_Z, SET_ORDER_Z_A, FILTER_BY_ATTACK, SET_LOADING } from './Types'
+import {SET_POKEMONS_TYPE_RENDER, GET_POKEMONS_TYPE,ADD_POKEMONS, SET_ORDER_A_Z, SET_ORDER_Z_A, FILTER_BY_ATTACK_MIN_MAX, FILTER_BY_ATTACK_MAX_MIN} from './Types'
 
 //Estado inicial de nuestro reducer
 const initialstate = {
@@ -28,18 +28,28 @@ switch (action.type) {
              ...state,
              pokemons: state.pokemons.slice().sort((a, b) => b.name.localeCompare(a.name))
             }
-    case FILTER_BY_ATTACK:
+    case FILTER_BY_ATTACK_MIN_MAX:
+        return{
+            ...state,
+            pokemons: state.pokemons.slice().sort((a, b) => a.attack - b.attack)
+        }
+    case FILTER_BY_ATTACK_MAX_MIN:
         return{
             ...state,
             pokemons: state.pokemons.slice().sort((a, b) => b.attack - a.attack)
         }
-    
-    case SET_LOADING:
+    case GET_POKEMONS_TYPE:
+        return {
+             ...state,
+              types: action.payload  
+        }
+  
+    case  SET_POKEMONS_TYPE_RENDER:
+        return { ...state,  
+            pokemons: action.payload  
+        };
+  
 
-            return {
-                 ...state, loading: action.payload }
-                 ;
-    
     default:
         return{
             ...state

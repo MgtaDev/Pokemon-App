@@ -8,7 +8,22 @@
     left: -5%;
 
 }
-
+.CardsContainer h2{
+    position: relative;
+    color: rgb(7, 5, 33);
+    margin-top: -2.8rem;
+}
+span{
+    color: white;
+    position: relative;
+    margin-top: -2.7rem;
+    left: -87.4%;
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+.pageButtons{
+    justify-content: space-evenly;
+}
 .pageButtons button{
     padding: 10px 20px;
     font-size: 2rem;
@@ -19,13 +34,46 @@
     margin: 1rem;
     /* border:1px solid white; */
     position: relative;
-    top: 90%;
-    left: -23.5rem;
+    top: 10%;
+    left: 28.3rem;
     cursor: pointer;
+    justify-content: space-evenly;
 }
 .pageButtons button:first-of-type{
     position: relative;
+    left: 310%;
 }
 .pageButtons button:last-of-type{
     position: relative;
+    top: -36%;
+    left: 430%;
 }
+.filterButtons{
+    margin-right: 35rem;
+    top: 10%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid white;
+    margin-bottom: 2rem;
+}
+.filterButtons button{
+    margin:1rem;
+    padding: .2rem 3rem;
+    border-radius: 10%;
+    width: 80%;
+    left: 0%;
+    color: white;
+    border: none;
+    box-shadow: 4px 4px 20px black;
+    font-size: 15px;
+    align-items: center;
+    font-family: 'Lilita One', cursive;
+    background-color: rgb(7, 5, 33);
+    border:  1px solid white;
+    position: relative;
+    top:2%;
+    
+}
+
+

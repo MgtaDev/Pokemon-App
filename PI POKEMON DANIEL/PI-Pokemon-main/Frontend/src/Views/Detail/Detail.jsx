@@ -6,7 +6,6 @@ import axios from 'axios'
 const Detail = () => {
   const { id } = useParams();
   const [pokemon, setPokemon] = useState({});
-  console.log(id)
 
 
   useEffect(() => {
@@ -43,7 +42,7 @@ const Detail = () => {
             <h4>Defense:{pokemon?.defense}🛡️ </h4> 
             <h4>Speed:{pokemon?.speed}⚡</h4>
             <h4>Height:{pokemon?.height}M🧬</h4>
-            <h4>Weight:{pokemon?.weight}Kg🩻 </h4>
+            <h4>Weight:{pokemon?.weight}Kg⚖️ </h4>
               
           
             </div>

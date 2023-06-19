@@ -1,5 +1,5 @@
 import style from './CreateForm.module.css'
-import Photo from '../assets/giratinaGift.gif'
+import Photo from '../assets/gengarLoadingGif.gif'
 import Logo from '../assets/PokemonLogo.png'
 import { useState } from 'react'
 import { useSelector } from 'react-redux'

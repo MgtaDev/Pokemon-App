@@ -16,23 +16,24 @@
 
 .aboutMe span{
     color: #4d5a7ed7;
-    margin-left: .5rem;
+    position: relative;
+    left: 2.2%;
+
 }
 .aboutMe span:last-of-type{
     position: relative;
-    right: 5.3%;
     font-size: 37px;
     color: white;
-    margin-left: 1rem;
+    left: -3%;
 }
 .aboutMe h2{
 font-size: 40px;
 display: flex;
 justify-content: center;
 }
-.aboutMe h2:first-of-type{
+.aboutMe h1:first-of-type{
     position: relative;
-    left: 1%;
+    left: 40%;
     
 }
 .aboutMe img{
