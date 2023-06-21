@@ -17,8 +17,8 @@
   --dragon:rgb(129, 130, 177);
   --dark:rgb(121, 96, 159);
   --fairy: rgb(250, 219, 247);
-  --unknown:rgb(147, 192, 137);
-  --shadow: rgb(117, 89, 114);
+  --shadow:rgb(147, 192, 137);
+  --unknown: rgb(117, 89, 114);
 }
 
   .ButtonsContainer button{
@@ -27,141 +27,152 @@
   }
   .ButtonsContainer button:nth-child(1){
    padding: 10px 5px;
-   background-color: rgba(5, 231, 5, 100%);
-   border: 2px solid rgba(5, 231, 5, 100%)
+   background-color:  rgba(5, 21, 47, 80%);
+   border: 2px solid rgba(5, 21, 47, 80%)
   }
   .ButtonsContainer button:nth-child(1):hover{
     background-color: rgb(255, 255, 255);
     transition: .5s;
-    border: 2px solid rgba(5, 231, 5, 100%);
-    color: rgba(5, 231, 5, 100%);
+    border: 2px solid rgba(5, 21, 47, 80%);
+    color: rgba(5, 21, 47, 80%)
   }
 
 
   .ButtonsContainer button:nth-child(2){
-  background-color: var(--normal);
-  border: 2px solid var(--normal)
+  background-color:rgba(5, 21, 47, 80%);
+  border: 2px solid rgba(5, 21, 47, 80%)
   }
   .ButtonsContainer button:nth-child(2):hover{
-    background-color: var(--normal);
+    background-color: rgb(255, 255, 255);
     transition: .5s;
+    color: rgba(5, 21, 47, 80%)
   }
 
 
   .ButtonsContainer button:nth-child(3){
-  background-color: var(--fighting);
-  border: 2px solid var(--fighting)
+  background-color: rgba(5, 21, 47, 80%);
+  border: 2px solid rgba(5, 21, 47, 80%)
 
   }
   .ButtonsContainer button:nth-child(3):hover{
-    background-color: var(--fighting);
+    background-color: white;
     transition: .5s;
+    color: rgba(5, 21, 47, 80%)
   }
 
 
   .ButtonsContainer button:nth-child(4){
-    background-color: var(--poison);
-    border: 2px solid var(--poison)
+    background-color: rgba(5, 21, 47, 80%);
+    border: 2px solid rgba(5, 21, 47, 80%)
   }
   .ButtonsContainer button:nth-child(4):hover{
-    background-color: var(--poison);
+    background-color: white;
     transition: .5s;
-    border: 2px solid var(--poison)
+    border: 2px solid rgba(5, 21, 47, 80%);
+    color: rgba(5, 21, 47, 80%)
   }
 
 
   .ButtonsContainer button:nth-child(5){
-    background-color: var(--fliying);
-    border: 2px solid var(--fliying)
+    background-color:rgba(5, 21, 47, 80%);
+    border: 2px solid rgba(5, 21, 47, 80%)
 
   }
   .ButtonsContainer button:nth-child(5):hover{
-    background-color: var(--fliying);
+    background-color: white;
     transition: .5s;
-    border: 2px solid var(--fliying)
+    color: rgba(5, 21, 47, 80%);
+    border: 2px solid rgba(5, 21, 47, 80%)
   }
 
 
   .ButtonsContainer button:nth-child(6){
-    background-color:  var(--ground);
-    border: 2px solid var(--ground)
+    background-color: rgba(5, 21, 47, 80%);
+    border: 2px solid rgba(5, 21, 47, 80%)
   }
   .ButtonsContainer button:nth-child(6):hover{
-    background-color:  var(--ground);
+    background-color:  white;
     transition: .5s;
-    border: 2px solid var(--ground)
+    color: rgba(5, 21, 47, 80%);
+    border: 2px solid rgba(5, 21, 47, 80%)
   }
 
 
   .ButtonsContainer button:nth-child(7){
-    background-color: var(--rock);
-    border: 2px solid var(--rock)
+    background-color: rgba(5, 21, 47, 80%);
+    border: 2px solid rgba(5, 21, 47, 80%)
 
   }
   .ButtonsContainer button:nth-child(7):hover{
-    background-color: var(--rock);
+    background-color: white;
     transition: .5s;
-    border: 2px solid var(--rock)
+    color:rgba(5, 21, 47, 80%);
+    border: 2px solid rgba(5, 21, 47, 80%)
   }
 
 
   .ButtonsContainer button:nth-child(8){
-    background-color: var(--bug);
-    border: 2px solid var(--bug)
+    background-color: var(--ghost);
+    border: 2px solid var(--ghost)
 
   }
   .ButtonsContainer button:nth-child(8):hover{
-    background-color: var(--bug);
+    background-color: white;
     transition: .5s;
-    border: 2px solid var(--bug)
+    color: var(--ghost);
+    border: 2px solid var(--ghost)
   }
 
 
   .ButtonsContainer button:nth-child(9){
-    background-color: var(--ghost);
-    border: 2px solid var(--ghost)
+    background-color: var(--steel);
+    border: 2px solid var(--steel)
 
   }
   .ButtonsContainer button:nth-child(9):hover{
-    background-color: var(--ghost);
+    background-color: white;
     transition: .5s;
-    border: 2px solid var(--ghost)
-  }
-
-
-  .ButtonsContainer button:nth-child(10){
-  background-color: var(--steel) ;
-  border: 2px solid var(--steel)
-
-  }
-  .ButtonsContainer button:nth-child(10):hover{
-    background-color: var(--steel) ;
-    transition: .5s;
+    color: var(--steel);
     border: 2px solid var(--steel)
   }
 
 
-  .ButtonsContainer button:nth-child(11){
-  background-color: var(--fire);
+  .ButtonsContainer button:nth-child(10){
+  background-color: var(--fire) ;
   border: 2px solid var(--fire)
 
   }
-  .ButtonsContainer button:nth-child(11):hover{
-    background-color: var(--fire);
+  .ButtonsContainer button:nth-child(10):hover{
+    background-color: white ;
     transition: .5s;
+    color: var(--fire);
     border: 2px solid var(--fire)
   }
 
 
-  .ButtonsContainer button:nth-child(12){
+  .ButtonsContainer button:nth-child(11){
   background-color: var(--water);
   border: 2px solid var(--water)
 
   }
-  .ButtonsContainer button:nth-child(12):hover{
-    background-color: var(--water);
+  .ButtonsContainer button:nth-child(11):hover{
+    background-color: white;
     transition: .5s;
+    color: var(--water);
     border: 2px solid var(--water)
+  }
+
+
+  .ButtonsContainer button:nth-child(12){
+  background-color: var(--grass);
+  border: 2px solid var(--grass)
+
+  }
+  .ButtonsContainer button:nth-child(12):hover{
+    background-color:white;
+    transition: .5s;
+    color: var(--grass);
+    border: 2px solid var(--grass)
   }
 
 
@@ -171,8 +182,9 @@
 
   }
   .ButtonsContainer button:nth-child(13):hover{
-    background-color: var(--electric);  
+    background-color: white;
     transition: .5s;
+    color: var(--electric);
     border: 2px solid var(--electric)
 
   }
@@ -184,8 +196,9 @@
 
   }
   .ButtonsContainer button:nth-child(14):hover{
-    background-color: var(--psychic);
+    background-color: white;
     transition: .5s;
+    color: var(--psychic);
     border: 2px solid var(--psychic)
   }
 
@@ -196,8 +209,9 @@
 
   }
   .ButtonsContainer button:nth-child(15):hover{
-    background-color: var(--ice); 
+    background-color: white; 
     transition: .5s;
+    color: var(--ice);
     border: 2px solid var(--ice)
   }
 
@@ -208,8 +222,9 @@
 
   }
   .ButtonsContainer button:nth-child(16):hover{
-    background-color: var(--dragon);  
+    background-color: white;  
     transition: .5s;
+    color: var(--dragon);
     border: 2px solid var(--dragon)
   }
 
@@ -220,8 +235,9 @@
 
   }
   .ButtonsContainer button:nth-child(17):hover{
-    background-color: var(--dark) ;
+    background-color: white ;
     transition: .5s;
+    color: var(--dark);
     border: 2px solid var(--dark)
   }
 
@@ -232,8 +248,9 @@
 
   }
   .ButtonsContainer button:nth-child(18):hover{
-    background-color: var(--fairy);
+    background-color: white;
     transition: .5s;
+    color: var(--fairy);
     border: 2px solid var(--fairy)
   }
 
@@ -244,8 +261,9 @@
 
   }
   .ButtonsContainer button:nth-child(19):hover{
-    background-color: var(--shadow) ;
+    background-color: white ;
     transition: .5s;
+    color: var(--shadow);
     border: 2px solid var(--shadow)
   }
 
@@ -256,14 +274,15 @@
 
   }
   .ButtonsContainer button:nth-child(20):hover{
-    background-color: var(--unknown);
+    background-color: white;
     transition: .5s;
+    color: var(--unknown);
     border: 2px solid var(--unknown)
   }
 
 
   .ButtonsContainer{
-    margin-top: 2.2rem;
+    margin-top: 5rem;
     display: flex;
     flex-direction: column;
     width: 10%;
@@ -299,4 +318,30 @@
 .ButtonsContainer button:active{
     transform: scale(.7);
     transition: .1s;
+}
+
+@media (max-width:768px){
+  .ButtonsContainer{
+  font-size: 20px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  display: block;
+  width: 15%;
+  margin-top: 80%;
+  }
+  .ButtonsContainer h2{
+position: relative;
+left: 50%;
+  
+  }
+}
+@media (max-width: 418px){
+  .ButtonsContainer{
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 38rem;
+    float: left;
+
+  
+  }
 }

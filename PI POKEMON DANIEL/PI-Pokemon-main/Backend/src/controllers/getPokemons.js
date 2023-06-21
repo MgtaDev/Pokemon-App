@@ -2,7 +2,7 @@ const axios = require('axios');
 
 const getPokemons = async(req, res) => {
   try {
-  const url = 'https://pokeapi.co/api/v2/pokemon?limit=100'
+  const url = 'https://pokeapi.co/api/v2/pokemon?limit=24'
   //Nos trae a los pokemones con limite de 1281
   const apiResponse = await axios.get(url)
   

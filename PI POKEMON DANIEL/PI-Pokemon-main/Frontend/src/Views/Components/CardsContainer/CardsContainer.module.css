@@ -2,25 +2,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 1.8rem;
-    margin-left: 10rem;
+    gap: 2rem;
+    margin-top: 8rem;
+    margin-left: 8rem;
     position: relative;
     left: -5%;
 
 }
-.CardsContainer h2{
-    position: relative;
-    color: rgb(7, 5, 33);
-    margin-top: -2.8rem;
-}
-span{
-    color: white;
-    position: relative;
-    margin-top: -2.7rem;
-    left: -87.4%;
-    font-size: 35px;
-    letter-spacing: 1px;
-}
+
+
 .pageButtons{
     justify-content: space-evenly;
 }
@@ -34,46 +24,74 @@ span{
     margin: 1rem;
     /* border:1px solid white; */
     position: relative;
-    top: 10%;
-    left: 28.3rem;
+    /* left: 24rem; */
     cursor: pointer;
     justify-content: space-evenly;
 }
 .pageButtons button:first-of-type{
     position: relative;
-    left: 310%;
+    top: 7%;
+    left: 330%;
 }
 .pageButtons button:last-of-type{
     position: relative;
-    top: -36%;
-    left: 430%;
+    /* top: -%; */
+    left: 470%;
 }
+
+
+@media (max-width: 768px){
 .filterButtons{
-    margin-right: 35rem;
-    top: 10%;
-    position: relative;
     display: flex;
-    flex-direction: row;
-    border: 1px solid white;
-    margin-bottom: 2rem;
-}
-.filterButtons button{
-    margin:1rem;
-    padding: .2rem 3rem;
-    border-radius: 10%;
-    width: 80%;
-    left: 0%;
-    color: white;
-    border: none;
-    box-shadow: 4px 4px 20px black;
-    font-size: 15px;
-    align-items: center;
-    font-family: 'Lilita One', cursive;
-    background-color: rgb(7, 5, 33);
-    border:  1px solid white;
     position: relative;
-    top:2%;
-    
+    flex-direction: column;
+    left: 30%;
+}
+.filterButtons2{
+    position: relative;
+    left: -15%;
+}
+.CardsContainer h2{
+    position: relative;
+    left: 40%;
+}
+.CardsContainer span{
+    position: relative;
+    left: -32%;
 }
 
+.pageButtons{
+    position: relative;
+    left: 33%;
+}
 
+}
+@media (max-width:418px){
+    .filterButtons{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        left: -10%;
+        font-size: small;
+    }
+    .CardsContainer h2{
+        position: relative;
+        left: 5%;
+    }
+    .CardsContainer span{
+        position: relative;
+        margin-top: -2.8rem;
+        left: -48%;
+    }
+    
+    .pageButtons{
+        position: relative;
+        left: 1%;
+    }
+    .filterButtons2{
+        flex-direction: column;
+        position: relative;
+        left: -10%;
+    }
+}
+    

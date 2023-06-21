@@ -1,7 +1,6 @@
 const axios = require('axios');
 
 //Solicitamos nuestra tabla de types a nuestra db para proceder con la respectiva funcion
-const { Type } = require('../db.js');
 
 const getPokemonsByType = async (req, res) => {
 try {

@@ -11,16 +11,16 @@ try {
 
   //Creamos un objeto obtainedPokemon con los datos obtenido de response
   const obtainedPokemon = {
-    Id: response.data.id,
-    Nombre: response.data.name,
-    Imagen: response.data.sprites.other.home.front_default,
-    Hp: response.data.stats[0].base_stat,
-    Ataque: response.data.stats[1].base_stat,
-    Defensa: response.data.stats[2].base_stat,
-    Velocidad: response.data.stats[5].base_stat,
-    Altura: response.data.height,
-    Peso: response.data.weight,
-    Tipos: response.data.types.map(type => type.type.name)
+    id: response.data.id,
+    name: response.data.name,
+    image: response.data.sprites.other.home.front_default,
+    hp: response.data.stats[0].base_stat,
+    attack: response.data.stats[1].base_stat,
+    defense: response.data.stats[2].base_stat,
+    speed: response.data.stats[5].base_stat,
+    height: response.data.height,
+    weight: response.data.weight,
+    types: response.data.types.map(type => type.type.name)
   };
   return res.status(200).json(obtainedPokemon)
   

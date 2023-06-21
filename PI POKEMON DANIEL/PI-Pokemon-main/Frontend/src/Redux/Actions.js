@@ -1,5 +1,5 @@
 import axios from "axios"
-import { SET_POKEMONS_TYPE_RENDER, GET_POKEMONS_TYPE , ADD_POKEMONS, SET_ORDER_A_Z, SET_ORDER_Z_A, FILTER_BY_ATTACK_MIN_MAX,FILTER_BY_ATTACK_MAX_MIN, SHOW_API_POKEMONS, SHOW_DB_POKEMONS } from '../Redux/Types'
+import {ORDER_DEFAULT ,GET_POKEMON_PER_NAME ,SET_POKEMONS_TYPE_RENDER, GET_POKEMONS_TYPE , ADD_POKEMONS, SET_ORDER_A_Z, SET_ORDER_Z_A, FILTER_BY_ATTACK_MIN_MAX,FILTER_BY_ATTACK_MAX_MIN, SHOW_API_POKEMONS, SHOW_DB_POKEMONS, SHOW_ALL_POKEMONS } from '../Redux/Types'
 import { getPokemonsType, getPokemonsDetail } from "./api"
 
 export const addPokemons = ()=> {
@@ -30,6 +30,10 @@ export const addPokemons = ()=> {
     
   })
 
+  export const ordenarDefault = () => ({
+    type: ORDER_DEFAULT 
+  })
+
   export const filterByAttackMinMax = () => ({
     type: FILTER_BY_ATTACK_MIN_MAX
   });
@@ -38,15 +42,19 @@ export const addPokemons = ()=> {
     type: FILTER_BY_ATTACK_MAX_MIN
   });
 
+  export const filterAllPokemons = (payload) => ({
+    type: SHOW_ALL_POKEMONS,
+    payload: payload
+  })
 
   export const filterPokemonFromApi = (payload) => ({
     type:SHOW_API_POKEMONS,
-    payload: payload
+    payload
   });
 
   export const filterPokemonFromDb = (payload) => ({
     type:SHOW_DB_POKEMONS,
-    payload: payload
+    payload
   });
 
  
@@ -59,6 +67,8 @@ export const setPokemosTypeRender=(payload)=>({
   type:SET_POKEMONS_TYPE_RENDER,
   payload
  })
+
+
 
 
 export const fetchPokemonsTypes = (type) => async(dispatch) => {
@@ -92,3 +102,18 @@ export const fetchPokemonsTypes = (type) => async(dispatch) => {
     console.log(error);
   }
 }
+
+export const getPokemonForSearchBar = (nombre) => {
+  return (dispatch) => {
+    axios.get(`http://localhost:3001/pokemons/${nombre}`)
+      .then((response) => {
+        dispatch({
+          type: GET_POKEMON_PER_NAME,
+          payload: response.data,
+        });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+};

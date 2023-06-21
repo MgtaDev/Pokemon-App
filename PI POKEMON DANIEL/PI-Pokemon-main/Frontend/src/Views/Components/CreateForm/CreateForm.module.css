@@ -72,13 +72,13 @@
     }
     .RightContent{
         position: relative;
-        left: 12.5rem;
+        left: 10rem;
         top: -15rem;
     }
     .LeftSide{
       position: relative;
       margin-top: 1rem;
-      right: 3%;
+      right: 22%;
     }
     input {
         position: relative;

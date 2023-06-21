@@ -4,7 +4,7 @@ const { Pokemon, Type } = require('../db.js');
 const postPokemons = async (req,res) => {
 try {
   //Nos traemos los datos que requerira el pokemon por body
-  const { name, image, hp, attack, defense, speed, height, weight } = req.body;
+  const { name, image, hp, attack, defense, speed, height, weight, type } = req.body;
 
    //Creamos un nuevo pokemon con sus valores por default en undefined
    const newPokemon = await Pokemon.create ({
@@ -15,7 +15,8 @@ try {
     defense,
     speed,
     height,
-    weight
+    weight,
+    type
    })
 
    //Le asignamos uno o varios tipos existentes a nuestro pokemon;

@@ -10,9 +10,9 @@ const Card = ({id, name, type, img}) => {
     <div> 
     <img src={img} alt='pic' />
     
-    <p>{id}</p>
     <h1>{name}</h1>
-    <p>{types}</p>
+    <h6>{types}</h6>
+    <p>#00{id}</p>
 
     <div> 
     <Link to={`/details/${id}`}>

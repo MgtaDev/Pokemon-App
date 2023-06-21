@@ -2,9 +2,21 @@
     width: 400px;
     display: flex;;
     position: relative;
-    left: 31%;
+    left: 28.5%;
     padding-top: 10rem;
 }
 /* .Home{
     margin: 5rem;
 } */
+@media (max-width: 768px){
+    .Home img{
+        position: relative;
+        left: 19%;
+    }
+}
+@media (max-width: 418px){
+    .Home img{
+        position: relative;
+        left: 1%;
+    }
+}
