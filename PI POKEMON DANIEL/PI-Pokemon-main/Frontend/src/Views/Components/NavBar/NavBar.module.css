@@ -13,7 +13,7 @@ z-index: 100;
 .Navbar a{
     margin-right: 4rem;
     position: relative;
-    left: 51%;
+    left: 63%;
     text-decoration: none;
     font-size: 22px;
     color: white;
@@ -27,7 +27,7 @@ z-index: 100;
     padding: 0.8rem;
 }
 .Navbar img{
-    width: 70px;
+    width: 80px;
     margin-top:  .5rem;
     margin-left: 4rem;
     margin-bottom: .3rem;

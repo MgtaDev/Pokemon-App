@@ -2,17 +2,21 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 2rem;
-    margin-top: 8rem;
-    margin-left: 8rem;
+    gap: 1rem;
+    margin-top: 3rem;
+    margin-left: 6rem;
     position: relative;
-    left: -5%;
+    left: -2%;
 
 }
-
+.CardsContainer a{
+color: black;
+}
 
 .pageButtons{
     justify-content: space-evenly;
+    position: relative;
+    left: 1.2%;
 }
 .pageButtons button{
     padding: 10px 20px;
@@ -20,22 +24,24 @@
     display: flex;
     flex-direction: row;
     text-align: center;
-    background-color: rgba(56, 48, 48, 0.531);
+    background-color: rgb(2, 9, 34);
     margin: 1rem;
     /* border:1px solid white; */
     position: relative;
-    /* left: 24rem; */
+    /* left: 5rem; */
     cursor: pointer;
     justify-content: space-evenly;
+    color: white;
 }
 .pageButtons button:first-of-type{
     position: relative;
     top: 7%;
     left: 330%;
+    rotate: 180deg;
 }
 .pageButtons button:last-of-type{
     position: relative;
-    /* top: -%; */
+    top: -38%;
     left: 470%;
 }
 
@@ -86,12 +92,11 @@
     
     .pageButtons{
         position: relative;
-        left: 1%;
     }
-    .filterButtons2{
-        flex-direction: column;
-        position: relative;
-        left: -10%;
+    
+    .CardsContainer{
+        margin: 1rem;
+        padding: 7rem;
     }
 }
     

@@ -1,5 +1,5 @@
 import axios from "axios"
-import {ORDER_DEFAULT ,GET_POKEMON_PER_NAME ,SET_POKEMONS_TYPE_RENDER, GET_POKEMONS_TYPE , ADD_POKEMONS, SET_ORDER_A_Z, SET_ORDER_Z_A, FILTER_BY_ATTACK_MIN_MAX,FILTER_BY_ATTACK_MAX_MIN, SHOW_API_POKEMONS, SHOW_DB_POKEMONS, SHOW_ALL_POKEMONS } from '../Redux/Types'
+import {FILTER_BY_HIGH_SPEED, FILTER_BY_MIN_SPEED ,FILTER_BY_MIN_HP, FILTER_BY_HIGH_HP , ORDER_DEFAULT ,GET_POKEMON_PER_NAME ,SET_POKEMONS_TYPE_RENDER, GET_POKEMONS_TYPE , ADD_POKEMONS, SET_ORDER_A_Z, SET_ORDER_Z_A, FILTER_BY_ATTACK_MIN_MAX,FILTER_BY_ATTACK_MAX_MIN, SHOW_API_POKEMONS, SHOW_DB_POKEMONS, SHOW_ALL_POKEMONS, FILTER_BY_MIN_WEIGHT, FILTER_BY_HIGH_WEIGHT, FILTER_BY_MIN_DEFENSE, FILTER_BY_HIGH_DEFENSE } from '../Redux/Types'
 import { getPokemonsType, getPokemonsDetail } from "./api"
 
 export const addPokemons = ()=> {
@@ -37,6 +37,41 @@ export const addPokemons = ()=> {
   export const filterByAttackMinMax = () => ({
     type: FILTER_BY_ATTACK_MIN_MAX
   });
+
+  export const filterByMinHp = () => ({
+    type: FILTER_BY_MIN_HP
+  });
+
+  export const filterByHighHp = () => ({
+    type: FILTER_BY_HIGH_HP
+  });
+
+  export const filterByMinWeight = () => ({
+    type: FILTER_BY_MIN_WEIGHT
+  });
+
+  export const filterByHighWeight = () => ({
+    type: FILTER_BY_HIGH_WEIGHT
+  });
+
+  export const filterByMinDefense = () => ({
+    type: FILTER_BY_MIN_DEFENSE
+  });
+
+  export const filterByHighDefense = () => ({
+    type: FILTER_BY_HIGH_DEFENSE
+  });
+
+  export const filterByMinSpeed = () => ({
+    type: FILTER_BY_MIN_SPEED
+  });
+
+  export const filterByHighSpeed = () => ({
+    type: FILTER_BY_HIGH_SPEED
+  });
+
+
+  
 
   export const filterByAttackMaxMin = () => ({
     type: FILTER_BY_ATTACK_MAX_MIN
@@ -113,7 +148,7 @@ export const getPokemonForSearchBar = (nombre) => {
         });
       })
       .catch((error) => {
-        console.log(error);
+        window.alert('Ingrese el nombre de un pokemon existente');
       });
   };
 };

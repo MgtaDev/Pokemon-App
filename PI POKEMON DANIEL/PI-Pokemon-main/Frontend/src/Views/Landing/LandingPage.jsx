@@ -14,8 +14,7 @@ const Landing = () => {
             <span></span>
             <span></span>
                Entrar
-           </NavLink>
-         
+           </NavLink>         
         </div>
     )
 }

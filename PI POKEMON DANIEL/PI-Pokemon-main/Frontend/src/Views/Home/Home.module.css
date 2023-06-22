@@ -1,9 +1,9 @@
 .Home img{
-    width: 400px;
+    width: 450px;
     display: flex;;
     position: relative;
-    left: 28.5%;
-    padding-top: 10rem;
+    left: 31%;
+    padding-top: 8rem;
 }
 /* .Home{
     margin: 5rem;
@@ -17,6 +17,6 @@
 @media (max-width: 418px){
     .Home img{
         position: relative;
-        left: 1%;
+        left: 30%;
     }
 }

@@ -13,7 +13,7 @@
   width: 30%;
   height: 5.5rem;
   color: rgba(255, 255, 255, 0.8);
-  left: 37%;
+  left: 3%;
   border-radius: .5rem;
   font-weight: 400;
   font-size: 37.5px;
@@ -25,7 +25,7 @@
         background-color: rgba(102, 104, 106, 60%);
         border-radius: 1rem;
         display: flex;
-        height: 500px;
+        height: 900px;
         width: 73%;
         box-shadow: 4px 4px 20px black;
         position: relative;
@@ -53,8 +53,8 @@
     }
     .imgWrapper img:nth-child(1){
        width: 490px;
-       height:458.5px;
-       margin-top: 1.25rem;
+       height:825px;
+       margin-top: 2.25rem;
        border-top-left-radius: .5rem;
        border-bottom-left-radius: .5rem;
     }
@@ -72,21 +72,33 @@
     }
     .RightContent{
         position: relative;
-        left: 10rem;
-        top: -15rem;
+        left: -3.5rem;
+        /* top: -16.5rem; */
     }
     .LeftSide{
       position: relative;
-      margin-top: 1rem;
+      margin-top: -2rem;
       right: 22%;
+    }
+    
+    select{
+      margin: 1.5rem;
+      background-color: rgba(62, 63, 86, 0.9);
+      border-radius: 1rem;
+      align-items: center;
+
+
     }
     input {
         position: relative;
-        border-radius: .3rem;
+        border-radius: .5rem;
         display: flex;
         position: relative;
         padding: .2rem 1rem;
-        margin: .5rem;
+        margin: .8rem;
+        background-color: rgba(62, 63, 86, 0.9);
+        border: none;
+        color: white;
     }
 
     h2{
@@ -99,7 +111,7 @@
     position: relative;
     width: 100%;
     padding: .6rem 2rem;
-    color: rgb(22, 162, 243);
+    color: rgb(219, 226, 230);
     font-size: 16px;
     font-weight: 600;
     text-decoration: none;
@@ -111,14 +123,20 @@
     display: flex;
     background-color: rgba(0, 7, 7, 0.6);
     border-radius: .5rem;
-    top:-38%;
+    top:4%;
     left:3.5%;
-
   }
+  p{
+    position: relative;
+    left: 80%;
+    margin-top: -1.6rem;
+    font-size: 13px;
+  }
+  
   label{
     font-size: .8rem;
     position:relative;
-    left: .7rem;
+    left: 1.1rem;
   }
   button:hover {
     background: rgb(22, 162, 243);
@@ -147,7 +165,7 @@
     left: -100%;
     width: 100%;
     height: 5px;
-    background: linear-gradient(90deg, transparent, rgb(22, 162, 243));
+    background: linear-gradient(90deg, transparent, rgb(110, 113, 114));
     animation: btn-anim1 1s linear infinite;
   }
   
@@ -165,7 +183,7 @@
     right: 0;
     width: 5px;
     height: 100%;
-    background: linear-gradient(180deg, transparent, rgb(22, 162, 243));
+    background: linear-gradient(180deg, transparent, rgb(110, 113, 114));
     animation: btn-anim2 1s linear infinite;
     animation-delay: .25s
   }
@@ -184,7 +202,7 @@
     right: -100%;
     width: 100%;
     height: 5px;
-    background: linear-gradient(270deg, transparent, rgb(22, 162, 243));
+    background: linear-gradient(270deg, transparent, rgb(110, 113, 114));
     animation: btn-anim3 1s linear infinite;
     animation-delay: .5s
   }
@@ -203,7 +221,7 @@
     left: 0;
     width: 5px;
     height: 100%;
-    background: linear-gradient(360deg, transparent, rgb(22, 162, 243));
+    background: linear-gradient(360deg, transparent, rgb(110, 113, 114));
     animation: btn-anim4 1s linear infinite;
     animation-delay: .75s
   }

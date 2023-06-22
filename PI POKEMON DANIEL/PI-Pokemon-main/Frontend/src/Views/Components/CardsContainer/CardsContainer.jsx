@@ -9,7 +9,7 @@ import { Loading } from '../../index'
 
   //Empaginado
   const [currentPage, setCurrentPage] = useState(1)
-  const [itemsPerPage] = useState(12)
+  const [itemsPerPage] = useState(20)
   const lastPokemon = currentPage * itemsPerPage;
   const firtsPokemon = lastPokemon - itemsPerPage
   const currentPokemons = pokemons.slice(firtsPokemon,lastPokemon)
@@ -45,8 +45,8 @@ import { Loading } from '../../index'
         { 
         currentPokemons.length ?
         <div className={style.pageButtons}>
-        <button  onClick={handlePrevPage} disabled={currentPage === 1}> ⬅️ </button>
-        <button  onClick={handleNextPage} disabled={lastPokemon >= pokemons.length}> ➡️ </button>
+        <button  onClick={handlePrevPage} disabled={currentPage === 1}> ➤</button>
+        <button  onClick={handleNextPage} disabled={lastPokemon >= pokemons.length}>➤</button>
         </div> : null
         }
           

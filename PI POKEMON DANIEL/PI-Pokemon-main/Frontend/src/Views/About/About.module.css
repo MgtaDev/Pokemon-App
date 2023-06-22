@@ -11,20 +11,21 @@
         rgba(89, 114, 120, 0.75) 00%
 
          );
-     color: white;
+     color: rgb(255, 255, 255);
 }
+
 
 .aboutMe span{
     color: #4d5a7ed7;
     position: relative;
-    left: 2.2%;
 
 }
 .aboutMe span:last-of-type{
     position: relative;
-    font-size: 37px;
+    font-size: 45px;
     color: white;
-    left: -3%;
+    margin-top: .2rem;
+    left: 1%;
 }
 .aboutMe h2{
 font-size: 40px;
@@ -33,7 +34,9 @@ justify-content: center;
 }
 .aboutMe h1:first-of-type{
     position: relative;
-    left: 40%;
+    /* left: 40%; */
+    display: flex;
+    justify-content: center;
     
 }
 .aboutMe img{
@@ -50,4 +53,8 @@ justify-content: center;
 margin-bottom: -2rem;
 padding: 1rem 10rem;
 padding-bottom: 10rem;
+text-align: center;
+left: 0;
+font-size: medium;
 }
+

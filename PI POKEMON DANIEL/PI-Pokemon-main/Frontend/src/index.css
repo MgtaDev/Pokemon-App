@@ -6,7 +6,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: url(./Views/assets/Pokemon\ Wallpaper\ App.jpeg);
   background-size: cover;
-  background-position:80% 20%;
+  background-position: 20% 20%;
 }
 
 code {

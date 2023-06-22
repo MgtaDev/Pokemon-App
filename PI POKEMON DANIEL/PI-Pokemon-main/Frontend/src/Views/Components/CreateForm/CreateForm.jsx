@@ -1,73 +1,44 @@
 import style from './CreateForm.module.css'
-import Photo from '../../assets/gengarLoadingGif.gif'
+import Photo from '../../assets/Laboratorio Form.webp'
 import Logo from '../../assets//PokemonLogo.png'
 import { useState } from 'react'
 import { useSelector } from 'react-redux'
-
+import validate from './Validate'
+import { useNavigate } from 'react-router-dom'
 
 const CreateForm = () => {
   const  types = useSelector(state=>state.types)
+  const navigate = useNavigate()
+
   const [formData, setFormData] = useState({
-    nombre: '',
-    imagen: '',
-    vida: '',
-    ataque: '',
-    defensa: '',
-    velocidad: '',
-    altura: '',
-    peso: '',
-    tipos: ''
+    name: '',
+    image: '',
+    hp: '',
+    attack: '',
+    defense: '',
+    speed: '',
+    height: '',
+    weight: '',
+    types: ''
   });
+
+  const [errors, setErrors] = useState({});
 
   const handlechange = (event) => {
     setFormData({
       ...formData,
       [event.target.name]:  event.target.value
     })
+    setErrors(
+      validate({
+        ...formData,
+        [event.target.name]: event.target.value,
+      }))
   }
-  const expresiones = {
-    numeros: /^\d{1,3}$/, 
-    nombre: /^[a-zA-ZÀ-ÿ\s]{1,30}$/, 
-    imagen:/^.+\.(jpg|png|svg|jfif)$/i
- }
 
-    const handleSubmit = (event) => {
-      event.preventDefault();
-      if (!expresiones.nombre.test(formData.nombre)) {
-        alert('El campo nombre  debe contener solo letras con espacios y no ser mayor de de 30 letras.');
-        return;
-      }
-      if (!expresiones.numeros.test(formData.vida)) {
-        alert('El campo  debe vida debe tener de 1 a maximo 3 numeros.');
-        return;
-      }
-      if (!expresiones.numeros.test(formData.ataque)) {
-        alert('El campo  debe ataque debe tener de 1 a maximo 3 numeros.');
-        return;
-      }
-      if (!expresiones.numeros.test(formData.defensa)) {
-        alert('El campo  debe defensa debe tener de 1 a maximo 3 numeros.');
-        return;
-      }
-      if (!expresiones.numeros.test(formData.velocidad)) {
-        alert('El campo  debe velocidad debe tener de 1 a maximo 3 numeros.');
-        return;
-      }
-      if (!expresiones.numeros.test(formData.altura)) {
-        alert('El campo  debe altura debe tener de 1 a maximo 3 numeros.');
-        return;
-      }
-      if (!expresiones.numeros.test(formData.peso)) {
-        alert('El campo  debe peso debe tener de 1 a maximo 3 numeros.');
-        return;
-      }
-      
-      if (!formData.nombre || !formData.imagen || !formData.vida || !formData.ataque || !formData.defensa || !formData.velocidad || !formData.altura || !formData.peso || !formData.tipos) {
-        alert('Todos los campos son obligatorios');
-        return;
-      }
-    }
-  console.log(formData)
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
   const dataToCreatePokemon = {
     name: formData.nombre,
     hp: formData.vida,
@@ -85,11 +56,14 @@ const CreateForm = () => {
   })
     .then((response) => response.json())
     .then((data) => {
-      console.log('Success:', data);
+      window.alert('Pokemon Creado', data);
     })
     .catch((error) => {
       console.error('Error:', error);
     });
+
+    navigate('/home')
+  }
 
     return(
         <div className={style.Detail}>
@@ -113,17 +87,17 @@ const CreateForm = () => {
         <div className={style.LeftSide}>
         <label html="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" placeholder='Ingresa un nombre' value={formData.nombre} onChange={handlechange}/>
+        {errors.name && <p>{errors.name}</p>}
 
-        <label htmlFor="imagen">Imagen:</label>
-        <input type='image' alt='' id="imagen" name="imagen" placeholder='Escoje una imagen' value={formData.imagen} onChange={handlechange}/>
-       
         <label htmlFor="altura">Altura:</label>
         <input type="number" id="altura" name="altura" placeholder='Ingresa una altura'  value={formData.altura} onChange={handlechange}/>
-       
+        {errors.name && <p>{errors.height}</p>}
+
         <label htmlFor="peso">Peso:</label>
         <input type="number" id="peso" name="peso" placeholder='Ingresa el peso' value={formData.peso} onChange={handlechange}/>
+        {errors.name && <p>{errors.weight}</p>}
 
-        <label htmlFor="tipos">Tipos:</label>
+        <label htmlFor="tipos">Tipo 1</label>
         <select name="tipos" required value={formData.tipos} onChange={handlechange}>
           {
           types.map(type => {
@@ -131,20 +105,41 @@ const CreateForm = () => {
           })
           }
         </select>
+        {errors.name && <p>{errors.types}</p>}
+
+        <br />
+        <label htmlFor="tipos">Tipo 2</label>
+        <select name="tipos" required value={formData.tipos} onChange={handlechange}>
+          {
+          types.map(type => {
+            return (<option key={type} value={type}>{type}</option>)
+          })
+          }
+        </select>
+        {errors.name && <p>{errors.types}</p>}
+
         </div>
 
         <div className={style.RightContent}>
         <label htmlFor="vida">Vida:</label>
-        <input type="range" id="vida" name="vida" value={formData.vida} onChange={handlechange}/>
+        <input type="text" id="vida" name="vida" value={formData.vida} onChange={handlechange} placeholder='Ingresa un valor'/>
+        {errors.name && <p>{errors.hp}</p>}
+          
 
         <label htmlFor="ataque">Ataque:</label>
-        <input type="range" id="ataque" name="ataque" value={formData.ataque} onChange={handlechange}/>
+        <input type="text" id="ataque" name="ataque" value={formData.ataque} onChange={handlechange} placeholder='Ingresa una valor'/>
+        {errors.name && <p>{errors.attack}</p>}
+
 
         <label htmlFor="defensa">Defensa:</label>
-        <input type="range" id="defensa" name="defensa" value={formData.defensa} onChange={handlechange}/>
+        <input type="text" id="defensa" name="defensa" value={formData.defensa} onChange={handlechange} placeholder='Ingresa un valor'/>
+        {errors.name && <p>{errors.defense}</p>}
+
 
         <label htmlFor="velocidad">Velocidad:</label>
-        <input type="range" id="velocidad" name="velocidad" value={formData.velocidad} onChange={handlechange}/>
+        <input type="text" id="velocidad" name="velocidad" value={formData.velocidad} onChange={handlechange} placeholder='Ingresa una valor'/>
+        {errors.name && <p>{errors.speed}</p>}
+       
         </div>
           
 

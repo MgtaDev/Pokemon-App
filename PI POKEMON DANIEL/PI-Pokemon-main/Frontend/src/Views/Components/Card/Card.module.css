@@ -16,10 +16,10 @@ text-align: center;
 
 
 .Card img{
-    width: 180px;
+    width: 200px;
     position: relative;
     left: 2%;
-    margin-top: -12rem;
+    margin-top: -13rem;
 
 
 }
@@ -35,20 +35,21 @@ text-transform: uppercase;
 margin-top: -4rem;
 font-size: 20px;
 margin: -1.5rem;
+left: 0%;
 }
 .Card button{
-width: 110%;
+width: 102%;
 font-size: 13px;
 position: relative;
 /* left: 10%; */
 color: white;
-margin-top: 1.8rem;
-padding: 0.1rem ;
-left: -5%;
+margin-top:2rem;
+padding: 0.6rem ;
+left: -1.2%;
 margin-bottom: .35rem;
-border-radius: .3rem;
+border-radius: 1rem;
 /* margin-bottom: .9rem; */
-background-color: rgba(12, 12, 23, 0.854);
+background-color: rgba(12, 12, 23, 0.99);
 }
 .Card a{
     text-decoration: none;
@@ -56,11 +57,10 @@ background-color: rgba(12, 12, 23, 0.854);
 
 .Card h6{
     margin-top: -.1rem;
-    background-color: rgba(26, 27, 29, 0.806);
+    background-color: rgba(14, 57, 143, 0.806);
     border-radius: .3rem;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
     
 }
-

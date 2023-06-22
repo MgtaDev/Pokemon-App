@@ -23,10 +23,10 @@ try {
    const typesToAdd = await Type.findOne({ where: { name: type } });
    
    //Agregamos los tipos a nuestro pokemon creado
+   //En caso 200, retornamos el pokemon creado
+   return res.status(200).json(newPokemon)
    await newPokemon.addTypes([typesToAdd]);
        
-//En caso 200, retornamos el pokemon creado
-return res.status(200).json(newPokemon)
 
 } catch (error) {
   return res.status(400).send(error.message)
