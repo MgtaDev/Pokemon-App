@@ -1,0 +1,32 @@
+
+.searchBar{
+margin: 1rem;
+position: relative;
+left: 7%; 
+}
+.searchBar input{
+    color: white;
+    border-radius: 1rem;
+    padding: .5rem 8rem;
+    margin-right: 1rem;
+    background-color:rgb(39, 44, 55);
+    border: none;
+}
+.searchBar input:active{
+    background-color:rgb(39, 44, 55);
+
+}
+.searchBar button{
+    border-radius: 1rem;
+    padding: .05rem .3rem;
+    position: relative;
+    right: 17%;
+    background-color:rgb(39, 44, 55);
+    color: white;
+    border: none;
+    z-index: 3;
+    cursor: pointer;
+}
+.searchBar img{
+    width: 40px;
+}

@@ -1,0 +1,35 @@
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(28, 29, 35);
+}
+ nav > a > img{
+    width: 190px;
+    margin: .5rem;
+}
+.navButtons{
+    margin: 1.3rem;
+    position: relative;
+    left: 3.5%;
+}
+.navButtons a{
+margin: 1rem;
+color: white;
+text-decoration: none;
+}
+.navButtons a:first-of-type{
+    background-color:rgb(3, 125, 255) ;
+    font-size: 18px;
+    padding: .8rem 1.5rem;
+    font-weight: 500;
+    color: white;
+    border-radius: .2rem;
+}
+.navButtons a:last-of-type{
+    background-color:rgb(200, 40, 232) ;
+    font-size: 18px;
+    padding: .8rem .5rem;
+    font-weight: 500;
+    color: white;
+    border-radius: .2rem;
+}

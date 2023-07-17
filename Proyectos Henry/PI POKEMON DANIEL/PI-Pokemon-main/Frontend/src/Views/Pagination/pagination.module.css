@@ -1,0 +1,33 @@
+.Pagination{
+justify-content: center;
+}
+
+.pageButtons{
+justify-content: center;
+display: flex;
+margin: 2rem;
+color: white;
+}
+.pageButtons button{
+    padding: .4rem .8rem;
+    margin: .3rem;
+    /* color: white; */
+    background-color: rgb(28, 29, 35);;
+    border-radius: .4rem;
+    cursor: pointer;
+}
+.pageButtons button:active{
+    transition: 0.3s;
+    transform: scale(0.60);
+}
+.cardsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.selected {
+    color:white
+}
+.unselected {
+    color: rgb(77, 75, 75);
+}

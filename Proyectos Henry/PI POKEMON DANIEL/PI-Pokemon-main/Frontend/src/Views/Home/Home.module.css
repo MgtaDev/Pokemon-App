@@ -1,0 +1,12 @@
+.Home img{
+    width: 100px;
+}
+.Home{
+    background: linear-gradient(
+        60deg,
+        rgba(28, 43, 56, 80%)10%,
+        rgba(61, 89, 113,80%)98%,      
+        #6e6b8b55 100%
+      );
+      padding-bottom: 2rem;
+}

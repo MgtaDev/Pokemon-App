@@ -1,0 +1,10 @@
+.loadingCard{
+    justify-content: center;
+    display: flex;
+    margin-top: 10%;
+    margin-left: 3.3%;
+}
+.loadingCard img{
+    width: 400px;
+    margin-bottom: 10%;
+}

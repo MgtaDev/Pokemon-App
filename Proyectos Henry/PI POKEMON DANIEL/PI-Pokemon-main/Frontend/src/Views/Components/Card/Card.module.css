@@ -1,0 +1,98 @@
+.card{
+    background-color: white;
+    border-radius: .7rem;
+    margin: 1rem;
+    width: 280px;
+    text-align: center;
+    /* background: url('../../assets/FireCard\ Background.jpeg'); */
+    background-repeat: no-repeat;
+    background-position: 40%;
+}
+
+.card:hover{
+transform: scale(1.03);
+transition: .5s;
+}
+.card h2{
+    margin: 1rem;
+    float: left;
+    margin-bottom: -0rem;
+    color: #f3f4f5;
+    text-transform: capitalize;
+}
+.card img{
+    margin: .5rem;
+    width: 160px;
+    margin-top: -.5rem;
+}
+.card svg{
+    position: relative;
+    /* rotate:180deg; */
+    margin-top: -4rem;
+    margin-bottom: -.7rem;
+}
+.cardTop{
+    /* background-color: #f3f4f5; */
+    border-radius: .5rem;
+}
+.cardContent{
+    background-color: #f3f4f5;
+    border-radius: .7rem;
+
+}
+.cardContent h6{
+    margin: .3rem;
+    text-transform: capitalize;
+    z-index: 2;
+}
+.types{
+    display: flex;
+    justify-content: center;
+    margin: .5rem;
+    margin-left: 1.2rem;
+}
+.cardContent p{
+    margin: .5rem;
+}
+.id{
+    opacity: 50%;
+    display: none;
+}
+.cardContent button{
+    background-color: #f3f4f5;;
+    border: none;
+    border-top: solid .2rem #e2e3e3;;
+    padding: .3rem 6rem;
+    font-weight: 600;
+    margin: .8rem;
+    cursor: pointer;
+}
+.cardStats{
+    display: flex;
+    justify-content: center;
+}
+.cardStats p{
+    margin: 1.2rem;
+    font-size: small;
+    position: relative;
+    left: 4%;
+}
+.cardStats p:first-of-type{
+    position: relative;
+    left: -8.5%;
+}
+.cardStats span{
+    font-size: normal;
+    margin-top: -.7rem;
+    color: black;
+
+}
+.cardStats span:nth-child(1){
+position: relative;
+left: 15%;
+}
+.cardStats span:last-of-type{
+    position: relative;
+    right: 15%;
+
+}
